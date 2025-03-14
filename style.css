@@ -1,0 +1,53 @@
+
+body{
+    margin: 0;
+    min-height: 100vh; /* Adjusts based on content */
+    background-image: url(images/ancient-egypt-ktrlxmyif4d2jlp1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: right;
+    margin-top: 20px;
+}
+#top-image{
+    width: 250px;  
+    height: 200px; 
+    border-radius: 10px;
+    object-fit: cover;
+}
+#board{
+    height: 530px;
+    width: 530px;
+    margin: 0 auto;
+    background-color: rgba(52, 51, 51, 0.423);
+    border: 5px solid rgb(137, 137, 137);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 130px;
+    width: 100px;
+    margin: 2.5px;
+}
+.card img{
+    width: 200px;
+    height: 500px;
+}
+
+
