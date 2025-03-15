@@ -21,15 +21,19 @@ var rows =4;
 var columns = 5;
 
 
+document.body.addEventListener("click", function() {
+    if (!window.audioPlayed) {
+        window.audioPlayed = true; 
+        let startAudio = new Audio("./audio/ancient-181070.mp3");
+        startAudio.play();
+    }
+
+});
+
 window.onload = function(){
     shuffleCards();
     startGame();
 
-     // Play audio with a slight delay to ensure the page is loaded
-     let startAudio = new Audio("./audio/ancient-181070.mp3");
-     setTimeout(() => {
-         startAudio.play();
-     }, 100); // 100ms delay
 }
 
 function shuffleCards(){
