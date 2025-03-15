@@ -25,9 +25,11 @@ window.onload = function(){
     shuffleCards();
     startGame();
 
-    // Play audio only when the game starts
-    let startAudio = new Audio("./audio/ancient-181070.mp3");
-    startAudio.play();
+     // Play audio with a slight delay to ensure the page is loaded
+     let startAudio = new Audio("./audio/ancient-181070.mp3");
+     setTimeout(() => {
+         startAudio.play();
+     }, 100); // 100ms delay
 }
 
 function shuffleCards(){
