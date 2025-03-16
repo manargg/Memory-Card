@@ -27,7 +27,6 @@ document.body.addEventListener("click", function() {
         let startAudio = new Audio("./audio/ancient-181070.mp3");
         startAudio.play();
     }
-
 });
 
 window.onload = function(){
